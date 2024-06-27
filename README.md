@@ -1,6 +1,6 @@
 ## EnAMCU - 基于STC15W4K32S4单片机开发的多功能电子时钟
 
-[![EnAMCU_V0.2](https://i.postimg.cc/XvP7SnKm/En-AMCU-V0-2.jpg)](https://postimg.cc/SXWpcFvf)
+[![EnAMCU_V0.2.jpg](https://i.postimg.cc/wxXSrGy9/En-AMCU-V0-2.jpg)](https://postimg.cc/3WwS49Fq)
 
 ### 介绍 / Introduction
 
