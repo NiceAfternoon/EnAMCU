@@ -1,4 +1,0 @@
-".\Objects\STARTUP.obj",
-".\Objects\v0.2.obj" 
-TO ".\Objects\EnAMCU" 
-PRINT(".\Listings\EnAMCU.m51") RAMSIZE(256) 
