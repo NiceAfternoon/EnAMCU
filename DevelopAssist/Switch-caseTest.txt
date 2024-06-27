@@ -1,0 +1,50 @@
+#include <STC15F2K60S2.H>
+
+int test = 0;
+int demo = 1;
+
+void Delay10ms()		//@12.000MHz
+{
+	unsigned char i, j;
+
+	i = 20;
+	j = 113;
+	do
+	{
+		while (--j);
+	} while (--i);
+}
+
+
+int main() {
+	P0M0 = 0;
+	P0M1 = 0;
+	P2M0 = 0;
+	P2M1 = 0;
+	
+	while(1) {
+		if(P14 == 0) {
+			Delay10ms();
+			Delay10ms();
+			if(P14 == 0) {
+				if(test == 1) {
+					test--;
+				}else if (test == 0) {
+					test++;
+				}
+			}
+		}
+		switch(test) {
+			case 0:
+				if(demo == 1) {
+					P2 = 0xFE;
+				}
+				break;
+			case 1:
+				if(demo == 1) {
+					P2 = 0xFD;
+				}
+				break;
+		}
+	}
+}
